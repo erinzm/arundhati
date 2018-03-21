@@ -1,0 +1,18 @@
+.word {
+  cursor: pointer;
+}
+
+.word:hover {
+  color: green;
+}
+
+.word.picked {
+  color: lightgreen;
+  background-color: green;
+}
+
+.word.picked:hover {
+  color: black;
+}
+
+.note { color: #767676; }

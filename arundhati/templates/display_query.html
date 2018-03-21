@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p class="note">Please select query-relevant terms in the document.</p>
+<blockquote>
+  {%- for (text, word) in words %}
+    <span class="word" data-word="{{word}}">{{text}}</span>
+  {%- endfor %}
+</blockquote>
+
+<div>
+  <button id="relevant">relevant</button>
+  <button id="irrelevant">irrelevant</button>
+</div>
+{% endblock content %}
